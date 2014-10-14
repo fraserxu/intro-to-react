@@ -1,0 +1,8 @@
+# Site settings
+title: Intro to React
+baseurl: "/intro-to-react"
+url: "http://fraserxu.me/"
+
+# Build settings
+markdown: kramdown
+permalink: pretty

@@ -1,0 +1,237 @@
+@font-face {
+  font-family: "sqmarket";
+  src: url("fonts/sqmarket-light.eot");
+  src: url("fonts/sqmarket-light.eot?#iefix") format("embedded-opentype"),url("fonts/sqmarket-light.woff") format("woff"),url("fonts/sqmarket-light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "sqmarket";
+  src: url("fonts/sqmarket-regular.eot");
+  src: url("fonts/sqmarket-regular.eot?#iefix") format("embedded-opentype"),url("fonts/sqmarket-regular.woff") format("woff"),url("fonts/sqmarket-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "sqmarket";
+  src: url("fonts/sqmarket-medium.eot");
+  src: url("fonts/sqmarket-medium.eot?#iefix") format("embedded-opentype"),url("fonts/sqmarket-medium.woff") format("woff"),url("fonts/sqmarket-medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "sqmarket";
+  src: url("fonts/sqmarket-bold.eot");
+  src: url("fonts/sqmarket-bold.eot?#iefix") format("embedded-opentype"),url("fonts/sqmarket-bold.woff") format("woff"),url("fonts/sqmarket-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal
+}
+
+body {
+  font-family: "sqmarket", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 1.3em;
+}
+
+h1 {
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: #1492D6; /* blue */
+  color: white;
+
+  padding: 12pt;
+  margin: 0;
+}
+
+h1 .jewel {
+  margin-bottom: -2pt;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+frame, iframe {
+  border: none;
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+  background-color: #72BEE6; /* slightly lighter blue */
+  text-align: center;
+}
+
+.nav li {
+  display: inline-block;
+  list-style: none;
+  padding: 12pt 12pt;
+}
+
+.nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav li a:hover, .nav li a:focus {
+  text-decoration: underline;
+}
+
+.nav .active {
+  background-color: #B8DEF2; /* even lighter blue */
+}
+
+.post {
+  width: 400pt;
+  margin: 0 auto;
+}
+
+.giant-button {
+  text-decoration: none;
+  text-align: center;
+
+  font-size: 16pt;
+  background-color: #72BEE6; /* slightly lighter blue */
+  color: white;
+
+  display: block;
+  border-radius: 24pt;
+  margin: 0 24pt;
+  padding: 6pt 12pt;
+}
+
+.giant-button:hover, .giant-button:focus {
+  background-color: #B8DEF2; /* even lighter blue */
+}
+
+.example-row-1 {
+  width: 300pt;
+  margin-left: 50pt; /* (400 - 300) / 2; */
+}
+
+.example-row-2 {
+  width: 620pt; /* (2 * 300) + (1 * 20) */
+  margin-left: -60pt; /* (400 - 620) / 2; */
+}
+
+.example-row-3 {
+  width: 940pt; /* (3 * 300) + (2 * 20) */
+  margin-left: -270pt; /* (400 - 940) / 2; */
+}
+
+@media (max-width: 940pt) {
+  .example-row-3 {
+    width: 400pt;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 620pt) {
+  .post {
+    width: 90%;
+  }
+
+  .example-row-2, .example-row-3 {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.example-row-1::after,
+.example-row-2::after,
+.example-row-3::after {
+  content: '';
+  clear: both;
+  height: 0;
+  display: block;
+}
+
+.example {
+  width: 300pt;
+  float: left;
+  margin-right: 20pt;
+  margin-bottom: 20pt;
+}
+
+.example .toggle {
+  display: block;
+}
+
+.example:last-child {
+  margin-right: 0;
+}
+
+.example pre {
+  margin: 0;
+}
+
+.data-table {
+  border: 2pt solid #888;
+  border-radius: 3pt;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.data-table thead {
+  font-weight: 800;
+}
+
+.data-table th, .data-table td {
+  padding: 3pt;
+}
+
+.data-table th {
+  border-bottom: 2pt solid #888;
+  border-right: 1pt solid #888;
+}
+
+.data-table th:last-child {
+  border-right: none;
+}
+
+.data-table td {
+  border-right: 1pt solid #888;
+  border-bottom: 1pt solid #888;
+}
+
+.data-table td:last-child {
+  border-right: none;
+}
+
+.data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.numeric-col {
+  -webkit-font-feature-settings: "tnum" 1
+  text-align: right
+}
+
+.info {
+  margin: 12pt 24pt;
+  border-radius: 6pt;
+  background-color: #ff9;
+  padding: 10pt;
+}
+
+.footer {
+  font-size: 80%;
+  text-align: center;
+  padding: 2em 0;
+}
+
+.fork-me-on-github {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}
