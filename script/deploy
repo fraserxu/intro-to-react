@@ -9,7 +9,7 @@ CURRENT_SHA=$(git log HEAD^..HEAD --format="%h")
 # GitHub's jekyll appears to treat symlinks differently than local jekyll,
 # so we copy all the files that are symlinked by the examples directory
 
-rm examples # remove symlink
+rm -rf examples # remove symlink
 mkdir examples
 cp -r _includes/examples/ examples/
 
