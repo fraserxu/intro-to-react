@@ -93,11 +93,10 @@ React.renderComponent(<APP cat={'some string'} />, document.body)
 
 所以如果执行以上代码，我们最终会看到的结果是：
 
-```
-cat: some string
+  cat: some string
 
-txt: awesome txt from default props
-```
+  txt: awesome txt from default props
+
 另外一个与`getDefaultProps`类似的方法是`getInitialState`,都可以用来在render是传入数据。不同的是
 `props`一般用于静态数据，而`state`则偏向与动态。我会在后面讲解`state`属性时再进行详细介绍。
 

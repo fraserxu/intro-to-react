@@ -18,7 +18,7 @@ jekyll server --watch
 
 ## Thanks
 
-灵感来自与square [intro-to-d3](https://github.com/square/intro-to-d3).
+灵感来自于square [intro-to-d3](https://github.com/square/intro-to-d3).
 
 ## License
 
