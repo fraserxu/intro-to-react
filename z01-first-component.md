@@ -11,32 +11,19 @@ React是由Facebook和Instagram共同维护的一个专注于“前端UI渲染�
 
 本文是系列文章的第一篇，我们将会从编写第一个React组件开始。
 
-<!-- ```
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>First Component</title>
-    <script src="http://fb.me/react-0.11.1.js"></script>
-    <script src="http://fb.me/JSXTransformer-0.11.1.js"></script>
-</head>
-<body>
-<script type="text/jsx">
-    /*** @jsx React.DOM */
-    var APP = React.createClass({
-        render:function(){
-            return (
-                <h1>Hello React</h1>
-            )
-        }
-    });
+<div class="example-row-2">
+  <div class="example">
+    {% highlight html %}
+      {% include examples/hello.html %}
+    {% endhighlight %}
+  </div>
 
-    React.renderComponent(<APP />, document.body)
-</script>
-</body>
-</html>
-```
- -->
+  <iframe class="example"
+    height="180"
+    src="{{ "/examples/hello.html" | prepend: site.baseurl }}">
+  </iframe>
+</div>
+
 首先这里通过使用Facebook的CDN引入React的代码，你可以通过访问官方文档首页下载，或者点击[这个链接](http://facebook.github.io/react/downloads/react-0.11.1.zip).
 
 除去其他我们常见的HTML标签，这里第一个需要注意的是`<script type="text/jsx"></script>`,

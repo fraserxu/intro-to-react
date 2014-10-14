@@ -10,7 +10,9 @@ permalink: /state-basics/
 
 两者的使用方法也很类似。我们通过使用`getInitialState`方法定义组件的初始`state`属性。
 
-```
+<div class="example-row-1">
+  <div class="example">
+  {% highlight javascript %}
 /*** @jsx React.DOM */
 var APP = React.createClass({
     getInitialState: function() {
@@ -29,13 +31,17 @@ var APP = React.createClass({
 });
 
 React.renderComponent(<APP />, document.body)
-```
+  {% endhighlight %}
+  </div>
+</div>
 
 在组件完成加载之后，我们可以通过`setState`方法来改变我们设置的属性的值。
 
 首先在`render`函数中加入一个`input`元素，用于触发`onChange`事件，然后调用`setState`方法。
 
-```
+<div class="example-row-1">
+  <div class="example">
+  {% highlight javascript %}
 /*** @jsx React.DOM */
 var APP = React.createClass({
     getInitialState: function() {
@@ -55,7 +61,9 @@ var APP = React.createClass({
         )
     }
 });
-```
+  {% endhighlight %}
+  </div>
+</div>
 
 运行以上代码后，当我们在文本框中输入任意文本后，就会触发绑定的`onChange`事件，之后调用我们定义好的`updateTxt`方法，从而最终通过`setState`方法来更新`state`的数据。
 
