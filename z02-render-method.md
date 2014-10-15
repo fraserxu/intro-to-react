@@ -24,9 +24,9 @@ permalink: /render-method/
 </div>
 
 render方法在被调用时首先会检查所在实例化对象下面定义的`this.props`和`this.state`属性，然后将其数据添加到对应的DOM中去。
-函数内部的返回值可以包含其他的原生DOM对象，例如`<div />`， 也可以是`React.DOM.div`对象，另外还有自定义的组件。
+函数内部的返回值可以包含其他的原生DOM对象，例如`<div />`， 也可以是`React.DOM.div`对象，另外还有一些其他的自定义组件。
 
-查看一下`React.createClass()`方法的[源码](https://github.com/facebook/react/blob/master/src/core/ReactCompositeComponent.js#L1355)，可以发现它会首先检查`render`方法是否存在，如果没定义则会报错。
+查看一下`React.createClass()`方法的[源码](https://github.com/facebook/react/blob/master/src/core/ReactCompositeComponent.js#L1355)，你会发现它在被执行时，首先检查`render`方法是否存在，如果没定义则会报错。
 
 <div class="example-row-1">
   <div class="example">
